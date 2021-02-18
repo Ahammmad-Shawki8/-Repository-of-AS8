@@ -62,7 +62,7 @@ print(int(0b11011))
 print(int(0o52))
 print(int(0x7f))
 
-# we can also explicitely tell the base by adding a second arguement in the int() method.
+# we can also explicitely tell the base by adding a second argument in the int() method.
 print(int("ff7",16))
 
 # to express big integres in scientific way 3.45X10^45 we can use this format.

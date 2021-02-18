@@ -68,7 +68,7 @@ print(fun[3])
 # second method-
 # delete the first item in the list
 del fun[0] # it is delete command
-print(fun[0]) # delete command takes the index as an arguement.
+print(fun[0]) # delete command takes the index as an argument.
 
 # third method
 # deleting the last item of the list using pop method.

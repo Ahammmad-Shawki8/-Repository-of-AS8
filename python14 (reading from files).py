@@ -22,7 +22,7 @@ with open(name,"r") as bubble:
     print(bubble.readline())
 # this prints pretty awkward. it gives extra newline after each line.
 # its a default system.
-# we can change it through changing the end arguement.
+# we can change it through changing the end argument.
     print(bubble.readline(),end="")
     print(bubble.readline())
 print()

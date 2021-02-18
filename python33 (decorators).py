@@ -4,7 +4,7 @@
 # decorators are very simmilar to closures.
 
 # WHAT IS A DECORATOR?
-# decorator is a function which take another function as an arguement, 
+# decorator is a function which take another function as an argument, 
 # adds some kind of functionality 
 # and then return another function.
 # and it does all of these without altering the source code of the original function that we passed in.
@@ -41,24 +41,24 @@ display2=decorator_function(display)
 # so any time we use @ sign it means we are executing decorator function to the original function.
 # and it is easy to read too.
 
-# ok using the decorators here, this would not work if our originl functions take any arguements here.
+# ok using the decorators here, this would not work if our originl functions take any arguments here.
 
 @decorator_function
 def display_info(name,age):
-    print(f"display_info() runs successfully with the arguements {name} and {age}")
+    print(f"display_info() runs successfully with the arguments {name} and {age}")
 
 # display_info("Shawki",15)
 # if we run this we can see that we are getting an error.
 # it says: wrapper_function() takes 0 positional arguments but 2 were given
 
-# so we have to need to make our wrapper ready to take any number of positional and keyword arguements.
+# so we have to need to make our wrapper ready to take any number of positional and keyword arguments.
 # we can do this by adding *args and **kwargs to our wrapper_frunction() and our original_function()
 display_info("Shawki",15)
 
 # some people like to use classes as decorators instead of using functions as decorators.
 
 class decorator_class(object):# our decorator class is a subclass of object class.object class is the base class of the class hierarchy.
-    # when we pass our original function to our decorator function we used that as a arguement.
+    # when we pass our original function to our decorator function we used that as a argument.
     # we can do that in our class with the __init__ method.
     def __init__(self,origin_function):
         self.origin_function=origin_function
@@ -73,7 +73,7 @@ class decorator_class(object):# our decorator class is a subclass of object clas
 # using decorator class
 @decorator_class
 def display_info2(name,age):
-    print(f"display_info2() runs successfully with the arguements {name} and {age}")
+    print(f"display_info2() runs successfully with the arguments {name} and {age}")
 
 display_info2("Shawki",15)
 
@@ -84,13 +84,13 @@ display_info2("Shawki",15)
 # now lets look at some practical examples.
 
 # the most common usecase of decorators in python is LOGGING.
-# lets say we want to keep track of how many times a specific function runs and what arguements are passed to that function.
+# lets say we want to keep track of how many times a specific function runs and what arguments are passed to that function.
 
 def my_logger(orig_func):# here we are passing our original function.
     import logging # importing the logging module
     logging.basicConfig(filename="{}.log".format(orig_func.__name__),level=logging.INFO)# setting up a log file that matches up the name of our original function.
 
-    def wrapper(*args,**kwargs):# here we have our wrapper function, that takes in *args and **kwargs arguement.
+    def wrapper(*args,**kwargs):# here we have our wrapper function, that takes in *args and **kwargs argument.
         logging.info(
             "Run with args: {} and kwargs: {}".format(args,kwargs)# here it runs the logging. info and logs this line.
         )
@@ -100,7 +100,7 @@ def my_logger(orig_func):# here we are passing our original function.
 
 @my_logger
 def display_info3(name,age):
-    print(f"display_info3() runs successfully with the arguements {name} and {age}")
+    print(f"display_info3() runs successfully with the arguments {name} and {age}")
 
 display_info3("Shawki",16)
 # now we can reuse the decorator anytime we want to add this new logging functionality to any new function.
@@ -126,7 +126,7 @@ def my_timer(original_function): # passing in original function
 def display_info4(name,age):
     import time
     time.sleep(2) # to ensure that it take a long time
-    print(f"display_info4() runs successfully with the arguements {name} and {age}")
+    print(f"display_info4() runs successfully with the arguments {name} and {age}")
 
 display_info4("Shawki",15)
  
@@ -165,7 +165,7 @@ def my_timer2(original_function):
 def display_info5(name,age):
     import time
     time.sleep(2)
-    print(f"display_info5() runs successfully with the arguements {name} and {age}")
+    print(f"display_info5() runs successfully with the arguments {name} and {age}")
 
 display_info5("Shawki",15)
 # we can see that it is giving us an unexpected result.
@@ -179,7 +179,7 @@ display_info5("Shawki",15)
 def display_info6(name,age):
     import time
     time.sleep(2)
-    print(f"display_info6() runs successfully with the arguements {name} and {age}")
+    print(f"display_info6() runs successfully with the arguments {name} and {age}")
 
 display_info6("Shawki",15)
 # now we can see that it is giving us the expected result.
@@ -204,7 +204,7 @@ display_info6("Shawki",15)
 def display_info7(name,age):
     import time
     time.sleep(2)
-    print(f"display_info7() runs successfully with the arguements {name} and {age}")
+    print(f"display_info7() runs successfully with the arguments {name} and {age}")
 display_info7=my_timer2(display_info7)
 print(display_info7.__name__)
 # we can see the name is wrapper.
@@ -253,7 +253,7 @@ def my_timer3(original_function):
 def display_info8(name,age):
     import time
     time.sleep(2)
-    print(f"display_info8() runs successfully with the arguements {name} and {age}")
+    print(f"display_info8() runs successfully with the arguments {name} and {age}")
 display_info8=my_timer3(display_info8)
 print(display_info8.__name__)
 # we can see that it is no longer printing wrapper, it is giving us the name of our original function.

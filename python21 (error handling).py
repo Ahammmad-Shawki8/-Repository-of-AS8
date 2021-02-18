@@ -217,7 +217,7 @@ class CustomError(Exception): # this error class will inherit from built-in pyth
 # now we can use this error by raise keyword.
 def err_name(name=None):
     if name is None:
-        raise CustomError("expected 1 arguement (name) but none was given")
+        raise CustomError("expected 1 argument (name) but none was given")
     else:
         return "Beautiful Name :)"
 #print(err_name())

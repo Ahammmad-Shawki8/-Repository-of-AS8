@@ -39,12 +39,12 @@ for n in nums:
 # we we can also step on to our toes if we aren't careful.
 
 # mistake 3
-# mutable default arguements
-# another thing people get tripped up on is mutable default arguements.
+# mutable default arguments
+# another thing people get tripped up on is mutable default arguments.
 def add_employee(emp,emp_list=[]):
     emp_list.append(emp)
     print(emp_list)
-# this function takes two arguement emp and also an employee list.
+# this function takes two argument emp and also an employee list.
 # and it simply going to add this employee to this employee list and then print out the emp_list.
 # but we can see here the employee list has a default value which is a empty list.
 # so if we dont pass any emp_list when we call the function then it should make a new empty list for us from scratch.
@@ -63,7 +63,7 @@ add_employee("Hasnine")
 # each time it will get longer and longer and keeps appending to the same list 
 # even though we should haev the empty list by default.
 # so whats going on here?
-#=> in python default arguements are evaluated once at a time it creates the function.
+#=> in python default arguments are evaluated once at a time it creates the function.
 # so its not actually creating a new empty list each time we calling the function.
 # we wont notice that with immutable types like strings and things like that.
 # but in muttable datatypes like list, it is using the same list that it created when the function was defined.
@@ -76,14 +76,14 @@ def add_employee2(emp,emp_list=None):
     print(emp_list)
 add_employee2("Shawki")
 add_employee2("Hasnine")
-# so basically default arguements are created once when the function was defined,
+# so basically default arguments are created once when the function was defined,
 # it dont created every time when the function is called.
 
 # there are some more places where we may face this problem.
 import time
 from datetime import datetime
 
-def display(time=datetime.now()):# it takes time a arguement. it has a default value of current time.
+def display(time=datetime.now()):# it takes time a argument. it has a default value of current time.
     print(time.strftime("%B, %D, %Y %H:%M:%S"))
 
 display()
@@ -91,7 +91,7 @@ time.sleep(1)# here we are sleeping the code after each function call for 1 sec.
 display()
 time.sleep(1)
 display()
-# we might expect if we dont give time arguement, we will always have the current time printed.
+# we might expect if we dont give time argument, we will always have the current time printed.
 # but we can see that each time it ran it didnt update the time like we might expect.
 # the reason is as before is it executes only one when the function was defined and not each time the function is run.
 # to solve this problem we could do something like this.

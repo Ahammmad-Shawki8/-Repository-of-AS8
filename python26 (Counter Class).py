@@ -24,7 +24,7 @@ print(c)
 # but sometimes there are lots of keys while we are working with big data.
 # so we may not have to acces all the keys. we may need to know only the mos common 10 keys or three keys.
 # we can do that most_common method in Conter class.
-print(c.most_common(3)) # it takes one arguement which is how many keys we want to display.
+print(c.most_common(3)) # it takes one argument which is how many keys we want to display.
 # this method gives us a list with paired tuples which first item is the key and second item is the value of the key.
 
 # So it can be said that, its definately the best way and extreamly helpful to do something like this with counter.

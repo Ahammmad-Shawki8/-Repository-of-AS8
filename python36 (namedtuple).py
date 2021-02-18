@@ -30,7 +30,7 @@ from collections import namedtuple
 # now lets create a namedtuple.
 Color=namedtuple("Color",["red","green","blue"])
 
-# namedtuple take two arguements. first one is typename. it is the name of generated class. 
+# namedtuple take two arguments. first one is typename. it is the name of generated class. 
 # generally, the typename is same as the name of the namedtuple name.
 # second one is the feild names of the tuple's values in a list.
 
@@ -48,6 +48,6 @@ print(color2.red)
 # it is a lot more readable than our regular tuple.
 # this is a lot less and easier typing as well than our dictionary.
 
-# if we want to be lot more explicit, then we can use the arguements names when we are creating named tuples.
+# if we want to be lot more explicit, then we can use the arguments names when we are creating named tuples.
 color3=Color(red=23,green=45,blue=78)
 # but if we dont do that it will still work.

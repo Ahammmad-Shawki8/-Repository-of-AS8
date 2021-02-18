@@ -81,7 +81,7 @@ img2.show()
 # now lets say we want to make this image black&white.
 # we can do that by convert() method.
 img3=img1.convert(mode="L")
-# here we have to pass an arguement mode and set that equal to "L"
+# here we have to pass an argument mode and set that equal to "L"
 img3.show()
 # sometimes we forget about these methods and mode.
 # but we can always see them in the documentation.

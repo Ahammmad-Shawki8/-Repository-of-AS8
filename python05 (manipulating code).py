@@ -14,13 +14,13 @@ print(message.index("world")) # simmlar to find but raise ValueError if not foun
 print(message.rfind("world")) # returns the index starting at the rightmost ccurance of the string, else -1
 print(message.rindex("world")) # simmlar to rfind but raise ValueError if not found 
 # the number which comes to the output means the characters before the word is that number.
-# we can also tell python where to start and where to end. they are going to be the 2nd and 3rd arguement.
+# we can also tell python where to start and where to end. they are going to be the 2nd and 3rd argument.
 print(message.find("l",4,-1))
 print(message.count("o")) # count the number of the letter.
 print("       dhaka        ".strip()) # ignore the blank space.
 print("       dhaka        ".rstrip()) # ignore the blank space of right side.
 print("       dhaka        ".lstrip()) # ignore the blank space of left side.
-# we can also use specific character to remove by adding another arguement in those above 3 methods.
+# we can also use specific character to remove by adding another argument in those above 3 methods.
 print("kkkkkkkkkkkkkk foo kkkkkkkkkkkkkk".strip("k"))
 print(message.center(100)) # returns the string at the center of 100 spaces.
 print(message.ljust(100)) # returns the string before center of 100 spaces.

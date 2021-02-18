@@ -163,7 +163,7 @@ logging.debug(f"div: {n1} / {n2} = {div_result}")
 
 # lets say we want to change our logging format to time and level name and the message.
 logging.basicConfig(filename="Basics_Log.log", level=logging.DEBUG, format="%(asctime)s:%(levelname)s:%(message)s")
-# here we need to add another arguement which is format.
+# here we need to add another argument which is format.
 
 # now if we run our logging commands again.
 add_result=add(n1,n2)

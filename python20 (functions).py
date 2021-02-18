@@ -45,9 +45,9 @@ main()
 # inside a function, parameters behave like a variable.
 # we can use parameters both for integer value or string value.
 
-# differnce between parameter and arguement
+# differnce between parameter and argument
 # when we define variables for accepting  when defining a function is called a perameter.
-# when we insert values for parameters when calling a function is called an arguement.
+# when we insert values for parameters when calling a function is called an argument.
 
 # integer
 def function3(x):
@@ -317,13 +317,13 @@ print(ft("hello","shawki"))
 # if we give an argument, it will ignore default argument.
 
 # *args and **kwargs
-def student(*args, **kwargs):# args and kwargs are allowing us to accept an orbitory number of positional or keyword arguement. 
+def student(*args, **kwargs):# args and kwargs are allowing us to accept an orbitory number of positional or keyword argument. 
         print(args)
         print(kwargs)
 student("math","comsci",name="shawki",age=14)
-# here "math" and "comsci is positional argument, and the name="shawki" and age=14 is keyword arguement.
+# here "math" and "comsci is positional argument, and the name="shawki" and age=14 is keyword argument.
 # *args give us positional argument in a tuple.
-# **kwargs give us keyword arguements in a dictionary.
+# **kwargs give us keyword arguments in a dictionary.
 
 # we can do the same thing-
 def students(*args, **kwargs): 

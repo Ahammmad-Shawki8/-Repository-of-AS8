@@ -116,7 +116,7 @@ test_6()
 # so, Not overusing global scope and using local scope is recommanded.
 
 
-# now lets see functions with arguements.
+# now lets see functions with arguments.
 def test_7(a):
     w = "local w"
     print(a)
@@ -158,7 +158,7 @@ print(dir(builtins))
 def max():
     pass
 
-# now if we use the max function, then we will get an type error saying max() take 0 positional arguement but 1 is given.
+# now if we use the max function, then we will get an type error saying max() take 0 positional argument but 1 is given.
 #mx = max([3,6,4,5,1])
 #print(mx)
 

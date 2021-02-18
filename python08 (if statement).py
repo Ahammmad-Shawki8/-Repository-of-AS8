@@ -110,7 +110,7 @@ else:
         print(f.read())
 
 # all() and any() function.
-# all() and any() function takes an iterable as an arguement.
+# all() and any() function takes an iterable as an argument.
 # all() returns true if all the values of that iterable is true, otherwise false.
 # any() returns true if any of the values of that iterable is true, otherwise false.
 if all([True,True,True,False]):

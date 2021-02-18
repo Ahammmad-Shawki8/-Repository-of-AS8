@@ -19,7 +19,7 @@ print(dir(arr.array))
 
 # to make an array we can use the array() method.
 a=arr.array("i",[9,3,4,5])
-# array() takes 2 arguements.
+# array() takes 2 arguments.
 # first one in typecode. there are different type codes for different datatypes.
 # second one is the values. we have to pass the values in a list.
 print(a)
@@ -84,7 +84,7 @@ b.append(7)
 print(b)
 # we can also use the insert() method to insert values to an array with certain index.
 b.insert(0,6)
-# here we have to pass two arguements.
+# here we have to pass two arguments.
 # first one is the index
 # second one is the value.
 # insert doesnt delete any values it just shift other values.
@@ -95,11 +95,11 @@ print(b)
 b.remove(7)
 print(b)
 popped=b.pop(0)
-# note that, pop() takes the index of the value as an arguement.
+# note that, pop() takes the index of the value as an argument.
 print(b)
 print(popped)
 del b[0]
-# note that, del takes the index of the value as an arguement.
+# note that, del takes the index of the value as an argument.
 print(b)
 
 # indexing

@@ -47,7 +47,7 @@ for index,name in enumerate(names,start=1):
     print(index,name)
 # so enumerate is a function which returns both the indexes and the values from the list that we are looping over.
 # and we can use unpacking to grab this values by index,name.
-# we can also pass in a start value by adding start arguement, if we dont want to start counting from 0.
+# we can also pass in a start value by adding start argument, if we dont want to start counting from 0.
 
 # tip 5
 # recognizing all functions correctly.
@@ -151,9 +151,9 @@ person1.first_key=first_val # because it will then create an attribute of first_
 # to order to do this we need to use a built_in function called setattr().
 # setattr() is able to use a value of a variable.
 setattr(person1,"first","Ahammad")
-# here the first arguement is the object.
-# the second arguement is the attrinute name.
-# the third arguement is the value of that attribute.
+# here the first argument is the object.
+# the second argument is the attrinute name.
+# the third argument is the value of that attribute.
 print(person1.first)
 # that runs well.
 # setatter() function allows us to use variable instead of the exact value.
@@ -165,7 +165,7 @@ print(person1.last)
 # Again if we want to get a value, we can use getatter() at a same way.
 # if we want to get this last attribute here using that variable instead.
 last=getattr(person1,last_key)
-# here the first arguement is the object name and the second is what we want to get.
+# here the first argument is the object name and the second is what we want to get.
 # now if we run that-
 print(last)
 # but we might not see the usefulness in this but it is good to know because sometime we many need this.
@@ -215,7 +215,7 @@ print("logging you in ...........")
 # if we look at the python documentation then the official explanation is that-
 # -m will quote search sys.path for the name to module and execute its content as the main module.
 # basically it is saying that it is simply running that specific module that we specified after -m. so in that case the module will be smtpd.
-# and everything after that is the arguement for that module.
+# and everything after that is the argument for that module.
 # but we might be wondering why we dont run those scripts like other python scripts that we write in our code?
 # when we use our script in the command prompt we do something like this- python script_name.py
 # we can do that because they exists in our current directory.
@@ -223,8 +223,8 @@ print("logging you in ...........")
 # if we wanted to we could run our own script in that style as well.
 # python -m script_name. here we dont have to use .py because we just need to write the module name.
 # so just like the documentation said when we use -m it will search in our sys.path and impoet that module.
-# now we also may wonder which arguements the code after -m takes?
-# in this example, the smtpd module takes an arguement of -c and -n
+# now we also may wonder which arguments the code after -m takes?
+# in this example, the smtpd module takes an argument of -c and -n
 # now how would we know that?
 # if we run that module with -m, it also means we can import that module becausse we can import anything in our sys.path.
 # so if we want to learn more about that module, we can import it and further look at it.
@@ -235,8 +235,8 @@ print("logging you in ...........")
 import smtpd
 print(help(smtpd))
 # we can see their there is a section called options
-# their we can find all the arguements and what they do.
-# so anytime we see such arguements in any module that we dont know what to do with that,
+# their we can find all the arguments and what they do.
+# so anytime we see such arguments in any module that we dont know what to do with that,
 # we can just print it with our help function.
 # Actually, just knowing how the things work and all the operations that they can do will take us a long way in they coding world.
 # actually big programmers whom seen to know all about programming, 

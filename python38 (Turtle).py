@@ -14,7 +14,7 @@ a=turtle.Turtle()
 a.forward(100) # this take how many unit we want to forward as an argument.
 a.backward(200)
 # rotate the pen
-a.right(45) # this takes how many degrees we want to rotate right as an arguement.
+a.right(45) # this takes how many degrees we want to rotate right as an argument.
 a.left(360)
 # we can see more optioons in official tutle documentation.
 """https://docs.python.org/3.8/library/turtle.html?highlight=turtle#turtle.right"""
@@ -115,7 +115,7 @@ a.getscreen().bgcolor("#994444")
 
 a.penup()
 # we can also use goto() function.
-# it takes a tuple of cartessian coordinates as an arguement.
+# it takes a tuple of cartessian coordinates as an argument.
 a.goto((-200,100))
 a.pendown()
 

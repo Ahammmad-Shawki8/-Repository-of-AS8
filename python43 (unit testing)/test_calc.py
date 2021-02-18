@@ -87,14 +87,14 @@ class TestClac(unittest.TestCase):
         self.assertRaises(ValueError,calc.div,10,0) 
         # first we need to pass the exception,
         # then the name of the function we want to test (without parenthesis)
-        # then pass the arguements of that functions separate by comma one by one
+        # then pass the arguments of that functions separate by comma one by one
         # the reason we have to do is this way is -
         # if we use the asserEqual() then our value will raise that error and our test will think something failed.
         
         # method 2:
         # but testing the exceptions in the previous method is not recommanded
         # because sometimes it is easy to call the function of that we want to test normally
-        # instead of passing all of the arguements separately like we are doing here.
+        # instead of passing all of the arguments separately like we are doing here.
         # and we can do this by using a context manager for the exception.
         # that will allow us to handle and check the exceptions properly and also call our function normally.
 

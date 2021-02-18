@@ -24,7 +24,7 @@ today = datetime.date.today()
 # to do this, we need to know that how many days in each month,
 # and to get this we can use the calender module.
 
-# monthrange() method takes year and month as an arguement, and return the first day of that month and also the number of days in that month.
+# monthrange() method takes year and month as an argument, and return the first day of that month and also the number of days in that month.
 # and it also works for leap years too.
 month_info = calendar.monthrange(today.year,today.month)
 # this will return a tuple.
