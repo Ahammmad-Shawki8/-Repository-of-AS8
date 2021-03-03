@@ -1,8 +1,16 @@
 ![Poster](https://github.com/ahammadshawki8/Python-Basics/blob/master/basics.jpg)
 
+
+## _Python is the best language to start for beginners_
+
+In this repository, I have added Python basics code which will be helpful for beginners who are new to programming as well as programmers of different language. 
+Lots of basics topics has been covered with sufficient examples. After studying this repository, coders will have a proper knowledge about coding in Python. 
+After that, they can move to any separate field of programming. It can be Data Science, Software Engineering, Web Development, Game Development, System Development etc.
+
 <!-- TABLE OF CONTENTS -->
+  <h2>Table of Contents</h2>
 <details open="open">
-  <summary>Table of Contents</summary>
+  <summary></summary>
   <ol>
     <li>
       <a href="https://github.com/ahammadshawki8/Python-Basics/blob/master/python01%20(intro%20to%20python).py">Intro to Python</a>
@@ -159,12 +167,6 @@
     </li>
   </ol>
 </details>
-
-## _Python is the best language to start for beginners_
-
-In this repository, I have added Python basics code which will be helpful for beginners who are new to programming as well as programmers of different language. 
-Lots of basics topics has been covered with sufficient examples. After studying this repository, coders will have a proper knowledge about coding in Python. 
-After that, they can move to any separate field of programming. It can be Data Science, Software Engineering, Web Development, Game Development, System Development etc.
 
 
 ## _The materials in this repository were collected from:_
